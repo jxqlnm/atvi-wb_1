@@ -2,22 +2,28 @@ import Cliente from "./cliente"
 import Produto from "./produto"
 import Servico from "./servico"
 
-export default class Empresa{
-    private clientes: Array<Cliente>
-    private produtos: Array<Produto>
-    private servicos: Array<Servico>
-    constructor(){
-        this.clientes = []
-        this.produtos = []
-        this.servicos = []
+class Empresa {
+    private clientes: Cliente[];
+    private produtos: Produto[];
+    private servicos: Servico[];
+
+    constructor() {
+        this.clientes = [];
+        this.produtos = [];
+        this.servicos = [];
     }
-    public get getClientes(){
-        return this.clientes
+
+    get getClientes(): Cliente[] {
+        return this.clientes;
     }
-    public get getProdutos(){
-        return this.produtos
+
+    get getProdutos(): Produto[] {
+        return this.produtos;
     }
-    public get getServicos(){
-        return this.servicos
+
+    get getServicos(): Servico[] {
+        return this.servicos;
     }
 }
+
+export default Empresa;
