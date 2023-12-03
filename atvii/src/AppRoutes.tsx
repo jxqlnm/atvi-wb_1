@@ -12,6 +12,10 @@ import ListaServicos from "./pages/Servicos/ListaServicos";
 import FormularioCadastroServico from "./pages/Servicos/FormularioCadastroServico";
 import FormularioEditaServico from "./pages/Servicos/FormularioEditaServico";
 
+import Listagem from "./pages/Listagem/Listagem";
+
+import RegistraCompra from "./pages/Compras/RegistraCompra";
+
 const AppRoutes = () => {
     return (
         <Router>
@@ -31,6 +35,10 @@ const AppRoutes = () => {
                     path="/FormularioCadastroServico"
                     element={< FormularioCadastroServico />}/>
                 <Route path="/FormularioEditaServico" element={< FormularioEditaServico />}/>
+
+                <Route path="/Listagem" element={< Listagem />}/>
+
+                <Route path="/RegistraCompra" element={< RegistraCompra />}/>
 
             </Routes>
         </Router>

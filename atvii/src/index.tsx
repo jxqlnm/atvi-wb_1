@@ -18,6 +18,10 @@ import ListaServicos from "./pages/Servicos/ListaServicos";
 import FormularioCadastroServico from "./pages/Servicos/FormularioCadastroServico";
 import FormularioEditaServico from "./pages/Servicos/FormularioEditaServico";
 
+import Listagem from "./pages/Listagem/Listagem";
+
+import RegistraCompra from "./pages/Compras/RegistraCompra";
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -50,7 +54,13 @@ const router = createBrowserRouter([
             }, {
                 path: "/EditarProduto",
                 element: <FormularioEditaProduto/>
-            }
+            }, {
+              path: "/Listagem",
+              element: <Listagem/>
+            }, {
+              path: "/RegistrarCompra",
+              element: <RegistraCompra/>
+          }
         ]
     }
 ]);
