@@ -51,7 +51,7 @@ class ListagemComusumoValor extends listagem_1.default {
             console.log(`Opçao de Listagem.`);
             console.log(`1. Produto`);
             console.log(`2. Serviço`);
-            let opcao = entrada.receberNumero(`Por favor, escolha uma opçao: `);
+            let opcao = entrada.receberNumero(`Escolha uma opçao: `);
             switch (opcao) {
                 case 1:
                     console.log(chalk_1.default.greenBright('\nListagem de clientes que MAIS consumiram produtos em VALOR'));

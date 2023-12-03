@@ -18,7 +18,7 @@ class Entrada {
             let valor = prompt(mensagem);
             let data = valor.replace(/[^0-9]/g, '');
             if (valor == "") {
-                console.log("Esse campo é obrigatorio!");
+                console.log("Esse campo e obrigatorio!");
                 exe = true;
             }
             else if (valor.replace(/[^0-9]/g, '').length < 8) {
@@ -54,7 +54,7 @@ class Entrada {
         while (exe) {
             let valor = prompt(mensagem);
             if (valor == "") {
-                console.log("Esse campo é obrigatorio!");
+                console.log("Esse campo e obrigatorio!");
                 exe = true;
             }
             else if (valor.replace(/[^0-9]/g, '').length < 11) {
@@ -79,7 +79,7 @@ class Entrada {
             let texto = prompt(mensagem);
             let resto = texto.slice(1, texto.length);
             if (texto == "") {
-                console.log("Esse campo é obrigatorio!");
+                console.log("Esse campo e obrigatorio!");
                 exe = true;
             }
             else if (texto.length < 3) {
@@ -99,7 +99,7 @@ class Entrada {
         while (exe) {
             let texto = prompt(mensagem);
             if (texto == "") {
-                console.log("Esse campo é obrigatorio!");
+                console.log("Esse campo e obrigatorio!");
                 exe = true;
             }
             else if (texto[0].toUpperCase() == 'M') {

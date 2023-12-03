@@ -17,7 +17,7 @@ export default class ExcluirServico extends Excluir {
         console.log(`\nInicio da Exclusao do Serviço`);
         executa = true
         while (executa){
-            let busca = this.entrada.receberTexto(`Por favor informe o nome do Serviço: `);
+            let busca = this.entrada.receberTexto(`Informe o nome do Serviço: `);
             let cont = 1
             this.servicos.forEach(servico =>{
                 if (servico.nome == busca){
@@ -38,7 +38,7 @@ export default class ExcluirServico extends Excluir {
                     }
                 }
                 else if(cont == this.servicos.length){
-                    console.log(`\n nenhum Serviço encontrado com o nome informado!!! \n`); 
+                    console.log(`\n nenhum Serviço encontrado com o nome informado! \n`); 
                     executa = false
                 }
                 else{

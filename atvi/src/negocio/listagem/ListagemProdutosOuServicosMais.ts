@@ -55,7 +55,7 @@ export default class ListagemProdutosOuServicosMais extends Listagem {
             console.log(`Opção de Listagem.`);
             console.log(`1. Produto`);
             console.log(`2. Serviço`);
-            let opcao = entrada.receberNumero(`Por favor, escolha uma opção: `);
+            let opcao = entrada.receberNumero(`Escolha uma opção: `);
             switch (opcao) {
                 case 1:
                     console.log(chalk.greenBright("Listagem dos produtos mais consumidos em quantidade."));

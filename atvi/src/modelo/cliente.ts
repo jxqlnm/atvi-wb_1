@@ -72,11 +72,11 @@ export default class Cliente {
     public get getGenero(): string {
         switch (this.genero) {
             case 'Masculino':
-                return 'MMasculino';
+                return 'M. Masculino';
             case 'Feminino':
-                return 'FFeminino';
+                return 'F. Feminino';
             default:
-                return 'OOutro';
+                return 'O. Outro';
         }
     }
 

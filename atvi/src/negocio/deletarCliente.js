@@ -16,7 +16,7 @@ class ExcluirCliente extends deletar_1.default {
         console.log(`\nInicio da Exclusao do cliente`);
         executa = true;
         while (executa) {
-            let busca = this.entrada.receberTexto(`Por favor informe o número do cpf do cliente: `);
+            let busca = this.entrada.receberTexto(`Informe o número do CPF do cliente: `);
             let cont = 1;
             this.clientes.forEach(cliente => {
                 if (cliente.getCpf.getValor == busca) {
@@ -36,7 +36,7 @@ class ExcluirCliente extends deletar_1.default {
                     }
                 }
                 else if (cont == this.clientes.length) {
-                    console.log(`\n nenhum cliente encontrado com o cpf informado!!! \n`);
+                    console.log(`\n nenhum cliente encontrado com o CPF informado! \n`);
                     executa = false;
                 }
                 else {

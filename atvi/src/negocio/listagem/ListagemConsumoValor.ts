@@ -49,7 +49,7 @@ export default class ListagemComusumoValor extends Listagem {
             console.log(`Opçao de Listagem.`);
             console.log(`1. Produto`);
             console.log(`2. Serviço`); 
-            let opcao = entrada.receberNumero(`Por favor, escolha uma opçao: `)
+            let opcao = entrada.receberNumero(`Escolha uma opçao: `)
             switch (opcao) {
                 case 1:
                     console.log(chalk.greenBright('\nListagem de clientes que MAIS consumiram produtos em VALOR'));

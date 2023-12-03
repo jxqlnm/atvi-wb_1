@@ -13,17 +13,17 @@ export default class AtualizarProdutos extends Atualizar{
     public atualiza(): void {
         let cont = 1
         console.log(`\nInicio da atualizaçao do produto`);
-        let busca = this.entrada.receberTexto(`Por favor informe o nome do produto: `);
+        let busca = this.entrada.receberTexto(`Informe o nome do produto: `);
         this.produtos.forEach(produto =>{
             if (produto.nome == busca){
                 console.log(`Produto encontrado, forneça as informações!`);
-                let nome = this.entrada.receberTexto(`Por favor informe o novo nome do Produto: `)
+                let nome = this.entrada.receberTexto(`Informe o novo nome do Produto: `)
                 produto.nome = nome
                
                 console.log(`\nCadastro atualizado \n`);
             }
             else if(cont == this.produtos.length){
-                console.log(`\n nenhum Produto encontrado com o nome informado!!! \n`); 
+                console.log(`\n nenhum Produto encontrado com o nome informado! \n`); 
             }
             else{
                 cont++

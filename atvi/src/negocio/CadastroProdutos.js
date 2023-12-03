@@ -14,8 +14,8 @@ class CadastroProdutos extends cadastro_1.default {
     }
     cadastrar() {
         console.log(`\nInicio do cadastro do produto`);
-        let nome = this.entrada.receberTexto(`Por favor informe o nome do produto: `);
-        let preco = this.entrada.receberNumero(`Por favor informe o preço do produto: `);
+        let nome = this.entrada.receberTexto(`Informe o nome do produto: `);
+        let preco = this.entrada.receberNumero(`Informe o preço do produto: `);
         let produto = new produto_1.default(nome, preco);
         //produto.nome = nome
         this.nomes.push(produto);

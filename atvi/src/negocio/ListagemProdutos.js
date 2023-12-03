@@ -12,7 +12,7 @@ class ListagemProdutos extends listagem_1.default {
     listar() {
         console.log(`\nLista de todos os produtos:`);
         this.produtos.forEach(produtos => {
-            console.log(`--------------------------------------`);
+            console.log(`---------------------------------`);
             console.log(`Nome: ` + produtos.nome);
             console.log('Preço: ' + produtos.preco);
         });

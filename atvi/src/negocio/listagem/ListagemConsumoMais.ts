@@ -46,7 +46,7 @@ export default class ListagemConsumoMais extends Listagem{
             console.log(`Opeçao de Listagem.`);
             console.log(`1. Produto`);
             console.log(`2. Serviço`); 
-            let opcao = entrada.receberNumero(`Por favor, escolha uma opçao: `)
+            let opcao = entrada.receberNumero(`Escolha uma opçao: `)
             switch (opcao) {
                 case 1:
                     console.log(chalk.blue("Listagem dos 10 Clientes que MAIS consumiram produtos em quantidade."));

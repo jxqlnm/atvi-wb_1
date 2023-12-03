@@ -26,7 +26,6 @@ import ListagemClientes from "../negocio/listagemClientes";
 import ListagemProdutos from "../negocio/ListagemProdutos";
 import ListagemServicos from "../negocio/ListagemServicos";
 
-console.log(chalk.greenBright(`Bem-vindo ao cadastro de clientes do Grupo World Beauty`))
 let empresa = new Empresa()
 
 let cliente1 = new Cliente('Giovanna Martins', 'Giovanna', new CPF('12345678561', new Date(20, 11, 1995)), 'Masculino');
@@ -40,7 +39,25 @@ let cliente8 = new Cliente('Carlos Roberto Lima', 'Carlinhos', new CPF('45678901
 let cliente9 = new Cliente('Juliana Costa', 'Juju', new CPF('89012345678', new Date(12, 7, 1989)), 'Feminino');
 let cliente10 = new Cliente('Miguel Santos', 'Mi', new CPF('65432109876', new Date(5, 3, 2005)), 'Masculino');
 let cliente11 = new Cliente('Isabella Oliveira', 'Bella', new CPF('32109876543', new Date(28, 6, 1993)), 'Feminino');
-
+let cliente12 = new Cliente('Rafaela Silva', 'Rafa', new CPF('87654321098', new Date(15, 9, 1996)), 'Feminino');
+let cliente13 = new Cliente('Vinícius Pereira', 'Vini', new CPF('13579246801', new Date(3, 12, 1987)), 'Masculino');
+let cliente14 = new Cliente('Fernanda Lima', 'Nanda', new CPF('45678901230', new Date(20, 4, 1999)), 'Feminino');
+let cliente15 = new Cliente('Roberto Oliveira', 'Beto', new CPF('98765432123', new Date(8, 10, 1980)), 'Masculino');
+let cliente16 = new Cliente('Amanda Costa', 'Mandy', new CPF('87654321012', new Date(11, 8, 1992)), 'Feminino');
+let cliente17 = new Cliente('Diego Santos', 'Diguinho', new CPF('54321098765', new Date(27, 5, 1984)), 'Masculino');
+let cliente18 = new Cliente('Camila Oliveira', 'Cami', new CPF('21098765432', new Date(14, 3, 1997)), 'Feminino');
+let cliente19 = new Cliente('Felipe Silva', 'Fe', new CPF('78901234567', new Date(6, 1, 2001)), 'Masculino');
+let cliente20 = new Cliente('Larissa Lima', 'Lari', new CPF('43210987654', new Date(23, 7, 1994)), 'Feminino');
+let cliente21 = new Cliente('Andre Santos', 'Dede', new CPF('10987654321', new Date(17, 4, 1986)), 'Masculino');
+let cliente22 = new Cliente('Carolina Oliveira', 'Carol', new CPF('87654321098', new Date(25, 11, 1998)), 'Feminino');
+let cliente23 = new Cliente('Lucas Pereira', 'Luquinhas', new CPF('45678901230', new Date(19, 6, 1991)), 'Masculino');
+let cliente24 = new Cliente('Bruna Lima', 'Bru', new CPF('98765432123', new Date(2, 9, 1983)), 'Feminino');
+let cliente25 = new Cliente('Renato Santos', 'Renatinho', new CPF('54321098765', new Date(13, 12, 1997)), 'Masculino');
+let cliente26 = new Cliente('Tatiane Oliveira', 'Tati', new CPF('21098765432', new Date(9, 8, 1989)), 'Feminino');
+let cliente27 = new Cliente('Ricardo Silva', 'Rick', new CPF('78901234567', new Date(4, 3, 2002)), 'Masculino');
+let cliente28 = new Cliente('Patrícia Costa', 'Paty', new CPF('43210987654', new Date(21, 7, 1995)), 'Feminino');
+let cliente29 = new Cliente('Jose Lima', 'Ze', new CPF('10987654321', new Date(16, 4, 1987)), 'Masculino');
+let cliente30 = new Cliente('Vanessa Santos', 'Van', new CPF('87654321098', new Date(28, 11, 1990)), 'Feminino');
 
 cliente1.addRg(new RG('58951348', new Date(2004, 1, 20)));
 cliente2.addRg(new RG('89522146', new Date(2002, 11, 2)));
@@ -53,7 +70,25 @@ cliente8.addRg(new RG('44874668', new Date(2010, 1, 13)));
 cliente9.addRg(new RG('52115576', new Date(1994, 11, 14)));
 cliente10.addRg(new RG('47115597', new Date(1996, 4, 16)));
 cliente11.addRg(new RG('88715597', new Date(1997, 5, 6)));
-
+cliente12.addRg(new RG('58951348', new Date(2004, 1, 20)));
+cliente13.addRg(new RG('89522146', new Date(2002, 11, 2)));
+cliente14.addRg(new RG('53475527', new Date(1999, 4, 28)));
+cliente15.addRg(new RG('71466984', new Date(1942, 3, 23)));
+cliente16.addRg(new RG('39845464', new Date(1967, 7, 22)));
+cliente17.addRg(new RG('87214654', new Date(1953, 9, 21)));
+cliente18.addRg(new RG('44874668', new Date(2010, 1, 13)));
+cliente19.addRg(new RG('52115576', new Date(1994, 11, 14)));
+cliente20.addRg(new RG('47115597', new Date(1996, 4, 16)));
+cliente21.addRg(new RG('88715597', new Date(1997, 5, 6)));
+cliente22.addRg(new RG('58951348', new Date(2004, 1, 20)));
+cliente23.addRg(new RG('89522146', new Date(2002, 11, 2)));
+cliente24.addRg(new RG('53475527', new Date(1999, 4, 28)));
+cliente25.addRg(new RG('71466984', new Date(1942, 3, 23)));
+cliente26.addRg(new RG('39845464', new Date(1967, 7, 22)));
+cliente27.addRg(new RG('87214654', new Date(1953, 9, 21)));
+cliente28.addRg(new RG('44874668', new Date(2010, 1, 13)));
+cliente29.addRg(new RG('52115576', new Date(1994, 11, 14)));
+cliente30.addRg(new RG('47115597', new Date(1996, 4, 16)));
 
 empresa.getClientes.push(cliente1)
 empresa.getClientes.push(cliente2)
@@ -86,7 +121,21 @@ let produto2 = new Produto("Condicionador Revitalizante", 20);
 let produto3 = new Produto("Creme Antirrugas", 15);
 let produto4 = new Produto("Esfoliante Corporal de Frutas", 8);
 let produto5 = new Produto("Óleo Corporal de Lavanda", 18);
-let produto6 = new Produto("Mascara de Argila Facial", 25);
+let produto6 = new Produto("Máscara de Argila Facial", 25);
+let produto7 = new Produto("Shampoo Hidratante", 14);
+let produto8 = new Produto("Creme Noturno Reparador", 22);
+let produto9 = new Produto("Gel de Banho Energizante", 10);
+let produto10 = new Produto("Loção Hidratante de Aloe Vera", 16);
+let produto11 = new Produto("Perfume Floral Elegante", 30);
+let produto12 = new Produto("Esfoliante Labial de Baunilha", 12);
+let produto13 = new Produto("Creme para Mãos e Unhas", 14);
+let produto14 = new Produto("Óleo Essencial de Tea Tree", 25);
+let produto15 = new Produto("Máscara Capilar Nutritiva", 18);
+let produto16 = new Produto("Gel de Limpeza Facial Suave", 15);
+let produto17 = new Produto("Perfume Masculino Intenso", 28);
+let produto18 = new Produto("Sabonete Líquido Relaxante", 12);
+let produto19 = new Produto("Spray Corporal Refrescante", 10);
+let produto20 = new Produto("Creme para Pes Ressecados", 14);
 
 empresa.getProdutos.push(produto1)
 empresa.getProdutos.push(produto2)
@@ -104,8 +153,27 @@ cliente6.addProduto(produto6);
 cliente7.addProduto(produto3);
 cliente8.addProduto(produto6);
 cliente9.addProduto(produto1);
-cliente9.addProduto(produto3);
-cliente11.addProduto(produto2);
+cliente10.addProduto(produto11);
+cliente11.addProduto(produto11);
+cliente12.addProduto(produto12);
+cliente13.addProduto(produto13);
+cliente14.addProduto(produto14);
+cliente15.addProduto(produto15);
+cliente16.addProduto(produto16);
+cliente17.addProduto(produto17);
+cliente18.addProduto(produto18);
+cliente19.addProduto(produto19);
+cliente20.addProduto(produto20);
+cliente21.addProduto(produto1);
+cliente22.addProduto(produto2);
+cliente23.addProduto(produto3);
+cliente24.addProduto(produto4);
+cliente25.addProduto(produto5);
+cliente26.addProduto(produto6);
+cliente27.addProduto(produto7);
+cliente28.addProduto(produto8);
+cliente29.addProduto(produto9);
+cliente30.addProduto(produto10);
 
 cliente1.addServico(servico1);
 cliente2.addServico(servico2);
@@ -122,29 +190,29 @@ let execucao = true
 
 while (execucao) {
     console.log(chalk.blackBright(`Opções:`));
-    console.log(chalk.blueBright(`1Cadastrar cliente`));
-    console.log(chalk.blueBright(`2Listar todos os clientes`));
-    console.log(chalk.blueBright(`3Atualizar clientes`));
-    console.log(chalk.blueBright(`4Excluir clientes`));
-    console.log(chalk.blueBright(`5Cadastrar Produto`));
-    console.log(chalk.blueBright(`6Listar todos os produtos`));
-    console.log(chalk.blueBright(`7Atualizar produtos`));
-    console.log(chalk.blueBright(`8Excluir produtos`));
-    console.log(chalk.blueBright(`9Cadastrar Serviços`));
-    console.log(chalk.blueBright(`10Listar todos os Serviços`));
-    console.log(chalk.blueBright(`11Atualizar serviços`));
-    console.log(chalk.blueBright(`12Excluir serviços`));
-    console.log(chalk.blueBright(`13Listagem por genero`));
-    console.log(chalk.blueBright(`14Cadastrar consumo de produtos ou serviço para o cliente`));
-    console.log(chalk.blueBright(`15Listagem do consumo dos produtos ou serviços mais consumidos`));
-    console.log(chalk.blueBright(`16Listagem do consumo dos produtos ou serviços menos consumidos`));
-    console.log(chalk.blueBright(`17Listagem do produto ou serviço mais consumido`));
-    console.log(chalk.blueBright(`18Listagem do produto ou serviço mais consumido por genero`));
-    console.log(chalk.blueBright(`19Listagem dos clientes que mais consumiram em valor`));
+    console.log(chalk.blueBright(`1. Cadastrar cliente`));
+    console.log(chalk.blueBright(`2. Listar todos os clientes`));
+    console.log(chalk.blueBright(`3. Atualizar clientes`));
+    console.log(chalk.blueBright(`4. Excluir clientes`));
+    console.log(chalk.blueBright(`5. Cadastrar Produto`));
+    console.log(chalk.blueBright(`6. Listar todos os produtos`));
+    console.log(chalk.blueBright(`7. Atualizar produtos`));
+    console.log(chalk.blueBright(`8. Excluir produtos`));
+    console.log(chalk.blueBright(`9. Cadastrar Serviços`));
+    console.log(chalk.blueBright(`10. Listar todos os Serviços`));
+    console.log(chalk.blueBright(`11. Atualizar serviços`));
+    console.log(chalk.blueBright(`12. Excluir serviços`));
+    console.log(chalk.blueBright(`13. Listagem por genero`));
+    console.log(chalk.blueBright(`14. Cadastrar consumo de produtos ou serviço para o cliente`));
+    console.log(chalk.blueBright(`15. Listagem do consumo dos produtos ou serviços mais consumidos`));
+    console.log(chalk.blueBright(`16. Listagem do consumo dos produtos ou serviços menos consumidos`));
+    console.log(chalk.blueBright(`17. Listagem do produto ou serviço mais consumido`));
+    console.log(chalk.blueBright(`18. Listagem do produto ou serviço mais consumido por genero`));
+    console.log(chalk.blueBright(`19. Listagem dos clientes que mais consumiram em valor`));
     console.log(chalk.red(`0Sair`));
 
     let entrada = new Entrada()
-    let opcao = entrada.receberNumero(`Por favor, escolha uma opçao: `)
+    let opcao = entrada.receberNumero(`Escolha uma opçao: `)
 
     switch (opcao) {
         case 1:
@@ -225,9 +293,9 @@ while (execucao) {
             break
         case 0:
             execucao = false
-            console.log(`Até mais`)
+            console.log(`fim`)
             break;
         default:
-            console.log(`Operaçao nao entendida `)
+            console.log(`Operaçao invalida `)
     }
 }

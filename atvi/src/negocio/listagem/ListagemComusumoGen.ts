@@ -152,7 +152,7 @@ export default class ListaGeneroConsumo extends Listagem {
             console.log(`Opçao de Listagem.`);
             console.log(`1Produto`);
             console.log(`2Serviço`); 
-            let opcao = entrada.receberNumero(`Por favor, escolha uma opçao: `)
+            let opcao = entrada.receberNumero(`Escolha uma opçao: `)
             switch (opcao) {
                 case 1:
                     console.log('\nLista de produtos mais consumidos pelo público...')
@@ -183,7 +183,7 @@ export default class ListaGeneroConsumo extends Listagem {
                     exec = false
                     break
                 default:
-                    console.log(chalk.red(`Digite Uma Opçao Valida!`));
+                    console.log(chalk.red(`Digite Uma Opçao Valida`));
                     exec = true 
                 }
         }

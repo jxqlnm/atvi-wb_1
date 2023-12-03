@@ -16,7 +16,7 @@ class ExcluirProduto extends deletar_1.default {
         console.log(`\nInicio da Exclusao do Produto`);
         executa = true;
         while (executa) {
-            let busca = this.entrada.receberTexto(`Por favor informe o nome do Produto: `);
+            let busca = this.entrada.receberTexto(`Informe o nome do Produto: `);
             let cont = 1;
             this.produtos.forEach(produto => {
                 if (produto.nome == busca) {
@@ -36,7 +36,7 @@ class ExcluirProduto extends deletar_1.default {
                     }
                 }
                 else if (cont == this.produtos.length) {
-                    console.log(`\n nenhum Produto encontrado com o nome informado!!! \n`);
+                    console.log(`\n nenhum Produto encontrado com o nome informado! \n`);
                     executa = false;
                 }
                 else {

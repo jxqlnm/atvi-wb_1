@@ -23,7 +23,7 @@ class ListagemGenero extends listagem_1.default {
             }
         });
         let entrada = new entrada_1.default();
-        let genero = entrada.receberGenero('Qual é o genero?: ');
+        let genero = entrada.receberGenero('Qual e o genero?: ');
         if (genero[0].toUpperCase() == 'M') {
             console.log(chalk_1.default.red(`--------------------------------------`));
             mas.forEach(cliente => {

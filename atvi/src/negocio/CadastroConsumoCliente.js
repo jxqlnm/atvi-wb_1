@@ -14,7 +14,7 @@ class CadastroConsumoCliente extends cadastro_1.default {
         this.clientes = clientes;
     }
     cadastrar() {
-        let proc = this.entrada.receberCpf(`Informe o cpf da pessoa: `);
+        let proc = this.entrada.receberCpf(`Informe o CPF da pessoa: `);
         let exe = true;
         let c = 1;
         let execucao = true;

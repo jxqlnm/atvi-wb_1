@@ -10,7 +10,7 @@ export default class ListagemClientes extends Listagem {
     }
     public listar(): void {
         console.log(chalk.blueBright(`\nLista de todos os clientes:`));
-        console.log(chalk.red(`----------------------------------------------------------`));
+        console.log(`--------------------------`);
         this.clientes.forEach(cliente => {
             console.log(chalk.blueBright(`Nome: ` )+ cliente.nome); 
             console.log(chalk.blueBright(`Nome social: ` ) + cliente.nomeSocial);
@@ -27,7 +27,7 @@ export default class ListagemClientes extends Listagem {
             cliente.getServicosConsumidos.forEach(ser => {
                 console.log('      '+ ser.nome);
             });console.log(chalk.blueBright(']'));
-            console.log(chalk.red(`----------------------------------------------------------`));
+            console.log(`--------------------------`);
         });
         console.log(`\n`);
     }

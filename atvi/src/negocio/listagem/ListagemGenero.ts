@@ -24,7 +24,7 @@ export default class ListagemGenero extends Listagem{
         })
 
         let entrada =  new Entrada()
-        let genero = entrada.receberGenero('Qual é o genero?: ')
+        let genero = entrada.receberGenero('Qual e o genero?: ')
         if(genero[0].toUpperCase() == 'M'){
             console.log(chalk.red(`--------------------------------------`));
             mas.forEach(cliente => {

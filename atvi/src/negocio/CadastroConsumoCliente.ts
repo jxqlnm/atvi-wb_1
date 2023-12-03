@@ -27,9 +27,9 @@ export default class CadastroConsumoCliente extends Cadastro{
                     while(exe){
                         console.log("------------------------------------------------");
                         console.log(chalk.greenBright(`Opeçao de consumo.`));
-                        console.log(chalk.blueBright(`1Produto`));
-                        console.log(chalk.blueBright(`2Serviço`));
-                        console.log(chalk.redBright(`0Sair`));           
+                        console.log(chalk.blueBright(`1. Produto`));
+                        console.log(chalk.blueBright(`2. Serviço`));
+                        console.log(chalk.redBright(`0. Sair`));           
                         let op = this.entrada.receberNumero('Insira a Opçao:  ')
                         let cont = 1
                         switch(op){

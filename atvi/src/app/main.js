@@ -134,7 +134,7 @@ while (execucao) {
     console.log(chalk_1.default.blueBright(`19Listagem dos clientes que mais consumiram em valor`));
     console.log(chalk_1.default.red(`0Sair`));
     let entrada = new entrada_1.default();
-    let opcao = entrada.receberNumero(`Por favor, escolha uma opçao: `);
+    let opcao = entrada.receberNumero(`Escolha uma opçao: `);
     switch (opcao) {
         case 1:
             let cadastro = new cadastroCliente_1.default(empresa.getClientes);
@@ -214,7 +214,7 @@ while (execucao) {
             break;
         case 0:
             execucao = false;
-            console.log(`Até mais`);
+            console.log(`fim`);
             break;
         default:
             console.log(`Operaçao nao entendida `);

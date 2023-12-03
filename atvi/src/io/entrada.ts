@@ -17,7 +17,7 @@ export default class Entrada {
             let data = valor.replace(/[^0-9]/g, '');
 
             if (valor == "") {
-                console.log("Esse campo é obrigatório");
+                console.log("Esse campo e obrigatório");
                 exe = true;
             } else if (valor.replace(/[^0-9]/g, '').length < 8) {
                 console.log("Esse campo nao pode ser menor que 8 digitos! E deve conter apenas números");
@@ -51,10 +51,10 @@ export default class Entrada {
             let valor = prompt(mensagem);
 
             if (valor == "") {
-                console.log("Esse campo é obrigatório");
+                console.log("Esse campo e obrigatório");
                 exe = true;
             } else if (valor.replace(/[^0-9]/g, '').length < 11) {
-                console.log("Esse campo nao pode ser menor que 11 digitos! E deve conter apenas números");
+                console.log("Esse campo nao pode ser menor que 11 digitos e deve conter apenas números");
                 exe = true;
             } else if (valor.replace(/[^0-9]/g, '').length > 11) {
                 console.log("Esse campo nao pode ser maior que 11 digitos");
@@ -77,7 +77,7 @@ export default class Entrada {
             let resto = texto.slice(1, texto.length);
 
             if (texto == "") {
-                console.log("Esse campo é obrigatório");
+                console.log("Esse campo e obrigatório");
                 exe = true;
             } else if (texto.length < 3) {
                 console.log("Esse campo nao pode ser menor que tres digitos");
@@ -99,7 +99,7 @@ export default class Entrada {
             let texto = prompt(mensagem);
 
             if (texto == "") {
-                console.log("Esse campo é obrigatório");
+                console.log("Esse campo e obrigatório");
                 exe = true;
             } else if (texto[0].toUpperCase() == 'M') {
                 exe = false;

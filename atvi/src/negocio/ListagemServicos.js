@@ -12,7 +12,7 @@ class ListagemServicos extends listagem_1.default {
     listar() {
         console.log(`\nLista de todos os serviços:`);
         this.servicos.forEach(servicos => {
-            console.log(`--------------------------------------`);
+            console.log(`---------------------------------`);
             console.log(`Nome: ` + servicos.nome);
             console.log('Preço: ' + servicos.preco);
         });
