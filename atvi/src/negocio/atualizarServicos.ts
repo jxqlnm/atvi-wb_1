@@ -23,7 +23,7 @@ export default class AtualizarServicos extends Atualizar{
                 console.log(`\nCadastro atualizado \n`);
             }
             else if(cont == this.servicos.length){
-                console.log(`\n nenhum Serviço encontrado com o nome informado! \n`); 
+                console.log(`\nNenhum Serviço encontrado com o nome informado! \n`); 
             }
             else{
                 cont++

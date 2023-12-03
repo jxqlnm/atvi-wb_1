@@ -6,38 +6,39 @@ import Entrada from "../../io/entrada";
 import chalk from "chalk";
 
 export default class ListaGeneroConsumo extends Listagem {
-    private empresa: Empresa 
-    constructor(empresa: Empresa){
-        super()
-        this.empresa = empresa
+    private empresa: Empresa;
+
+    constructor(empresa: Empresa) {
+        super();
+        this.empresa = empresa;
     }
 
     private listaProduto = {
         listaFem: [],
         listaMasc: [],
-        listaOutros: []
-    }
+        listaOutros: [],
+    };
 
     private listaServico = {
         listaFem: [],
         listaMasc: [],
-        listaOutros: []
-    }
+        listaOutros: [],
+    };
 
     private registrarItens = () => {
-        this.empresa.getClientes.forEach(cliente => {
-            cliente.getProdutosConsumidos.forEach(p => {
+        this.empresa.getClientes.forEach((cliente) => {
+            cliente.getProdutosConsumidos.forEach((p) => {
                 let produto = new Produto(p.nome, p.preco);
-                switch(cliente.getGeneroChar()){
+                switch (cliente.getGeneroChar()) {
                     case 'Feminino':
                         if (this.listaProduto.listaFem.length == 0) {
                             produto.addConsumo();
                             this.listaProduto.listaFem.push(produto);
                         } else {
-                            let produtoEncontrado = this.listaProduto.listaFem.find(prod => {
-                                return produto.nome == prod.nome
+                            let produtoEncontrado = this.listaProduto.listaFem.find((prod) => {
+                                return produto.nome == prod.nome;
                             });
-                            if (produtoEncontrado == undefined){
+                            if (produtoEncontrado == undefined) {
                                 produto.addConsumo();
                                 this.listaProduto.listaFem.push(produto);
                             } else {
@@ -50,10 +51,10 @@ export default class ListaGeneroConsumo extends Listagem {
                             produto.addConsumo();
                             this.listaProduto.listaMasc.push(produto);
                         } else {
-                            let produtoEncontrado = this.listaProduto.listaMasc.find(prod => {
-                                return produto.nome == prod.nome
+                            let produtoEncontrado = this.listaProduto.listaMasc.find((prod) => {
+                                return produto.nome == prod.nome;
                             });
-                            if (produtoEncontrado == undefined){
+                            if (produtoEncontrado == undefined) {
                                 produto.addConsumo();
                                 this.listaProduto.listaMasc.push(produto);
                             } else {
@@ -66,10 +67,10 @@ export default class ListaGeneroConsumo extends Listagem {
                             produto.addConsumo();
                             this.listaProduto.listaOutros.push(produto);
                         } else {
-                            let produtoEncontrado = this.listaProduto.listaOutros.find(prod => {
-                                return produto.nome == prod.nome
+                            let produtoEncontrado = this.listaProduto.listaOutros.find((prod) => {
+                                return produto.nome == prod.nome;
                             });
-                            if (produtoEncontrado == undefined){
+                            if (produtoEncontrado == undefined) {
                                 produto.addConsumo();
                                 this.listaProduto.listaOutros.push(produto);
                             } else {
@@ -78,18 +79,18 @@ export default class ListaGeneroConsumo extends Listagem {
                         }
                 }
             });
-            cliente.getServicosConsumidos.forEach(s => {
+            cliente.getServicosConsumidos.forEach((s) => {
                 let servico = new Servico(s.nome, s.preco);
-                switch(cliente.getGeneroChar()){
+                switch (cliente.getGeneroChar()) {
                     case 'Feminino':
                         if (this.listaServico.listaFem.length == 0) {
                             servico.addConsumo();
                             this.listaServico.listaFem.push(servico);
                         } else {
-                            let servicoEncontrado = this.listaServico.listaFem.find(serv => {
-                                return servico.nome == serv.nome
+                            let servicoEncontrado = this.listaServico.listaFem.find((serv) => {
+                                return servico.nome == serv.nome;
                             });
-                            if (servicoEncontrado == undefined){
+                            if (servicoEncontrado == undefined) {
                                 servico.addConsumo();
                                 this.listaServico.listaFem.push(servico);
                             } else {
@@ -102,10 +103,10 @@ export default class ListaGeneroConsumo extends Listagem {
                             servico.addConsumo();
                             this.listaServico.listaMasc.push(servico);
                         } else {
-                            let servicoEncontrado = this.listaServico.listaMasc.find(prod => {
-                                return servico.nome == prod.nome
+                            let servicoEncontrado = this.listaServico.listaMasc.find((prod) => {
+                                return servico.nome == prod.nome;
                             });
-                            if (servicoEncontrado == undefined){
+                            if (servicoEncontrado == undefined) {
                                 servico.addConsumo();
                                 this.listaServico.listaMasc.push(servico);
                             } else {
@@ -118,10 +119,10 @@ export default class ListaGeneroConsumo extends Listagem {
                             servico.addConsumo();
                             this.listaServico.listaOutros.push(servico);
                         } else {
-                            let servicoEncontrado = this.listaServico.listaOutros.find(prod => {
-                                return servico.nome == prod.nome
+                            let servicoEncontrado = this.listaServico.listaOutros.find((prod) => {
+                                return servico.nome == prod.nome;
                             });
-                            if (servicoEncontrado == undefined){
+                            if (servicoEncontrado == undefined) {
                                 servico.addConsumo();
                                 this.listaServico.listaOutros.push(servico);
                             } else {
@@ -131,62 +132,67 @@ export default class ListaGeneroConsumo extends Listagem {
                 }
             });
         });
+
         let listaLista = [
-            this.listaProduto.listaFem, this.listaProduto.listaMasc, this.listaProduto.listaOutros,
-            this.listaServico.listaFem, this.listaServico.listaMasc, this.listaServico.listaOutros
-        ]
-        listaLista.forEach(lista => {
+            this.listaProduto.listaFem,
+            this.listaProduto.listaMasc,
+            this.listaProduto.listaOutros,
+            this.listaServico.listaFem,
+            this.listaServico.listaMasc,
+            this.listaServico.listaOutros,
+        ];
+
+        listaLista.forEach((lista) => {
             lista.sort((item1, item2) => {
-                if (item1.consumo > item2.consumo) return -1
-                else return 1
+                if (item1.consumo > item2.consumo) return -1;
+                else return 1;
             });
-        })
-    }
+        });
+    };
 
     listar(): void {
-        let exec = true
+        let exec = true;
         this.registrarItens();
         while (exec) {
-            let entrada = new Entrada()
-            console.log("------------------------------------------------");
-            console.log(`Opçao de Listagem.`);
-            console.log(`1Produto`);
-            console.log(`2Serviço`); 
-            let opcao = entrada.receberNumero(`Escolha uma opçao: `)
+            let entrada = new Entrada();
+            console.log("-------------------------------------------");
+            console.log(`Opção de Listagem.`);
+            console.log(`1. Produto`);
+            console.log(`2. Serviço`);
+            let opcao = entrada.receberNumero(`Escolha uma opção: `);
             switch (opcao) {
                 case 1:
-                    console.log('\nLista de produtos mais consumidos pelo público...')
-                    console.log('\nFEMININO')
-                    this.listaProduto.listaFem.forEach(produto => {
-                        console.log(`- ${produto.nome}: Consumido ${produto.consumo} vezes`)
+                    console.log('\nLista de produtos mais consumidos pelo publico:');
+                    console.log('\nFEMININO');
+                    this.listaProduto.listaFem.forEach((produto) => {
+                        console.log(`- ${produto.nome}: Consumido ${produto.consumo} vezes`);
                     });
                     console.log('---------------');
-                    console.log('\nMASCULINO')
-                    this.listaProduto.listaMasc.forEach(produto => {
-                        console.log(`- ${produto.nome}: Consumido ${produto.consumo} vezes`)
+                    console.log('\nMASCULINO');
+                    this.listaProduto.listaMasc.forEach((produto) => {
+                        console.log(`- ${produto.nome}: Consumido ${produto.consumo} vezes`);
                     });
                     console.log('---------------');
-                    exec = false
-                    break
+                    exec = false;
+                    break;
                 case 2:
-                    console.log('\nLista de serviços mais consumidos pelo público...');
-                    console.log('\nFEMININO')
-                    this.listaServico.listaFem.forEach(servico => {
-                        console.log(`- ${servico.nome}: Consumido ${servico.consumo} vezes`)
+                    console.log('\nLista de serviços mais consumidos pelo publico:');
+                    console.log('\nFEMININO');
+                    this.listaServico.listaFem.forEach((servico) => {
+                        console.log(`- ${servico.nome}: Consumido ${servico.consumo} vezes`);
                     });
                     console.log('---------------');
-                    console.log('\nMASCULINO')
-                    this.listaServico.listaMasc.forEach(servico => {
-                        console.log(`- ${servico.nome}: Consumido ${servico.consumo} vezes`)
+                    console.log('\nMASCULINO');
+                    this.listaServico.listaMasc.forEach((servico) => {
+                        console.log(`- ${servico.nome}: Consumido ${servico.consumo} vezes`);
                     });
                     console.log('---------------');
-                    exec = false
-                    break
+                    exec = false;
+                    break;
                 default:
-                    console.log(chalk.red(`Digite Uma Opçao Valida`));
-                    exec = true 
-                }
+                    console.log(chalk.red(`Digite uma opção valida`));
+                    exec = true;
+            }
         }
     }
-
 }

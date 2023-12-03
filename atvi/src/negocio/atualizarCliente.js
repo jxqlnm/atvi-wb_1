@@ -13,7 +13,7 @@ class AtualizarCliente extends atualizar_1.default {
     }
     atualiza() {
         console.log(`\nInicio da atualizaçao do cliente`);
-        let busca = this.entrada.receberTexto(`Informe o número do CPF do cliente: `);
+        let busca = this.entrada.receberTexto(`Informe o numero do CPF do cliente: `);
         let cont = 1;
         this.clientes.forEach(cliente => {
             if (cliente.getCpf.getValor == busca) {
@@ -25,7 +25,7 @@ class AtualizarCliente extends atualizar_1.default {
                 console.log(`\nCadastro atualizado \n`);
             }
             else if (cont == this.clientes.length) {
-                console.log(`\n nenhum cliente encontrado com o CPF informado! \n`);
+                console.log(`\nNenhum cliente encontrado com o CPF informado! \n`);
             }
             else {
                 cont++;

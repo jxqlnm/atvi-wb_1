@@ -25,7 +25,7 @@ class ListagemGenero extends listagem_1.default {
         let entrada = new entrada_1.default();
         let genero = entrada.receberGenero('Qual e o genero?: ');
         if (genero[0].toUpperCase() == 'M') {
-            console.log(chalk_1.default.red(`--------------------------------------`));
+            console.log(chalk_1.default.red(`----------------`));
             mas.forEach(cliente => {
                 console.log(chalk_1.default.blueBright(`Nome: `) + cliente.nome);
                 console.log(chalk_1.default.blueBright(`Nome social: `) + cliente.nomeSocial);
@@ -44,11 +44,11 @@ class ListagemGenero extends listagem_1.default {
                     console.log('      ' + ser.nome);
                 });
                 console.log(chalk_1.default.blueBright(']'));
-                console.log(chalk_1.default.red(`--------------------------------------`));
+                console.log(chalk_1.default.red(`----------------`));
             });
         }
         else {
-            console.log(chalk_1.default.red(`--------------------------------------`));
+            console.log(chalk_1.default.red(`----------------`));
             fem.forEach(cliente => {
                 console.log(chalk_1.default.blueBright(`Nome: `) + cliente.nome);
                 console.log(chalk_1.default.blueBright(`Nome social: `) + cliente.nomeSocial);
@@ -67,7 +67,7 @@ class ListagemGenero extends listagem_1.default {
                     console.log('      ' + ser.nome);
                 });
                 console.log(chalk_1.default.blueBright(']'));
-                console.log(chalk_1.default.red(`--------------------------------------`));
+                console.log(chalk_1.default.red(`----------------`));
             });
         }
     }

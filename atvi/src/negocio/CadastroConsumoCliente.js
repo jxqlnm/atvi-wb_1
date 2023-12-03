@@ -22,11 +22,11 @@ class CadastroConsumoCliente extends cadastro_1.default {
             this.clientes.forEach(cliente => {
                 if (cliente.getCpf.getValor == proc) {
                     while (exe) {
-                        console.log("------------------------------------------------");
+                        console.log("-------------------------------------------");
                         console.log(chalk_1.default.greenBright(`Opeçao de consumo.`));
                         console.log(chalk_1.default.blueBright(`1Produto`));
                         console.log(chalk_1.default.blueBright(`2Serviço`));
-                        console.log(chalk_1.default.redBright(`0Sair`));
+                        console.log(chalk_1.default.redBright(`0. Sair`));
                         let op = this.entrada.receberNumero('Insira a Opçao:  ');
                         let cont = 1;
                         switch (op) {
@@ -68,7 +68,7 @@ class CadastroConsumoCliente extends cadastro_1.default {
                                 console.log(chalk_1.default.greenBright(`Obrigado!`));
                                 break;
                             default:
-                                console.log(chalk_1.default.redBright(`Digite Uma Opçao Valida!`));
+                                console.log(chalk_1.default.redBright(`Operacao invalida`));
                                 exe = true;
                         }
                     }

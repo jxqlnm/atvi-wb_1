@@ -26,7 +26,7 @@ export default class ListagemGenero extends Listagem{
         let entrada =  new Entrada()
         let genero = entrada.receberGenero('Qual e o genero?: ')
         if(genero[0].toUpperCase() == 'M'){
-            console.log(chalk.red(`--------------------------------------`));
+            console.log(chalk.red(`----------------`));
             mas.forEach(cliente => {
                 console.log(chalk.blueBright(`Nome: ` )+ cliente.nome);
                 console.log(chalk.blueBright(`Nome social: `) + cliente.nomeSocial);
@@ -43,10 +43,10 @@ export default class ListagemGenero extends Listagem{
                 cliente.getServicosConsumidos.forEach(ser => {
                     console.log('      '+ ser.nome);
                 });console.log(chalk.blueBright(']'));
-                console.log(chalk.red(`--------------------------------------`));
+                console.log(chalk.red(`----------------`));
             })
         }else{
-            console.log(chalk.red(`--------------------------------------`));
+            console.log(chalk.red(`----------------`));
             fem.forEach(cliente => {
                 console.log(chalk.blueBright(`Nome: `) + cliente.nome);
                 console.log(chalk.blueBright(`Nome social: ` )+ cliente.nomeSocial);
@@ -64,7 +64,7 @@ export default class ListagemGenero extends Listagem{
                 cliente.getServicosConsumidos.forEach(ser => {
                     console.log('      '+ ser.nome);
                 });console.log(chalk.blueBright(']'));
-                console.log(chalk.red(`--------------------------------------`));
+                console.log(chalk.red(`----------------`));
             })
         }
     }

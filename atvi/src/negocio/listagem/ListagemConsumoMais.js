@@ -49,7 +49,7 @@ class ListagemConsumoMais extends listagem_1.default {
             let exec = true;
             while (exec) {
                 let entrada = new entrada_1.default();
-                console.log("------------------------------------------------");
+                console.log("-------------------------------------------");
                 console.log(`Opeçao de Listagem.`);
                 console.log(`1. Produto`);
                 console.log(`2. Serviço`);
@@ -57,28 +57,28 @@ class ListagemConsumoMais extends listagem_1.default {
                 switch (opcao) {
                     case 1:
                         console.log(chalk_1.default.blue("Listagem dos 10 Clientes que MAIS consumiram produtos em quantidade."));
-                        console.log(chalk_1.default.red(`\n---------------------------------------------------------------\n`));
+                        console.log(chalk_1.default.red(`\n----------------------------------------------------------\n`));
                         consumoProduto.forEach(cliente => {
                             console.log(chalk_1.default.blueBright('Nome do Cliente: ') + cliente.nome);
                             console.log(chalk_1.default.blueBright('CPF do Cliente: ') + cliente.cpf);
                             console.log(chalk_1.default.blueBright('Quantidade de Produtos Consumidos pelo Cliente: ') + cliente.quantidadeProdutos);
-                            console.log(chalk_1.default.red(`\n---------------------------------------------------------------\n`));
+                            console.log(chalk_1.default.red(`\n----------------------------------------------------------\n`));
                         });
                         exec = false;
                         break;
                     case 2:
                         console.log(chalk_1.default.blue("Listagem dos 10 Clientes que MAIS consumiram serviços em quantidade."));
-                        console.log(chalk_1.default.red(`\n---------------------------------------------------------------\n`));
+                        console.log(chalk_1.default.red(`\n----------------------------------------------------------\n`));
                         consumoServico.forEach(cliente => {
                             console.log(chalk_1.default.blueBright('Nome do Cliente: ') + cliente.nome);
                             console.log(chalk_1.default.blueBright('CPF do Cliente: ') + cliente.cpf);
                             console.log(chalk_1.default.blueBright('Quantidade de Serviços Consumidos pelo Cliente: ') + cliente.quantidadeServicos);
-                            console.log(chalk_1.default.red(`\n---------------------------------------------------------------\n`));
+                            console.log(chalk_1.default.red(`\n----------------------------------------------------------\n`));
                         });
                         exec = false;
                         break;
                     default:
-                        console.log(chalk_1.default.red(`Digite Uma Opçao Valida!`));
+                        console.log(chalk_1.default.red(`Operacao invalida`));
                         exec = true;
                 }
             }

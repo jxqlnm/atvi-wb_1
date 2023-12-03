@@ -47,7 +47,7 @@ class ListagemComusumoValor extends listagem_1.default {
         let exec = true;
         while (exec) {
             let entrada = new entrada_1.default();
-            console.log("------------------------------------------------");
+            console.log("-------------------------------------------");
             console.log(`Opçao de Listagem.`);
             console.log(`1. Produto`);
             console.log(`2. Serviço`);
@@ -70,7 +70,7 @@ class ListagemComusumoValor extends listagem_1.default {
                     exec = false;
                     break;
                 default:
-                    console.log(chalk_1.default.red(`Digite Uma Opçao Valida!`));
+                    console.log(chalk_1.default.red(`Operacao invalida`));
                     exec = true;
             }
         }

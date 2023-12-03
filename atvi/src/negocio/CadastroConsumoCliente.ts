@@ -25,7 +25,7 @@ export default class CadastroConsumoCliente extends Cadastro{
             this.clientes.forEach(cliente => {
                 if(cliente.getCpf.getValor == proc){
                     while(exe){
-                        console.log("------------------------------------------------");
+                        console.log("-------------------------------------------");
                         console.log(chalk.greenBright(`Opeçao de consumo.`));
                         console.log(chalk.blueBright(`1. Produto`));
                         console.log(chalk.blueBright(`2. Serviço`));
@@ -67,7 +67,7 @@ export default class CadastroConsumoCliente extends Cadastro{
                                 console.log(chalk.greenBright(`Obrigado!`))
                                 break;
                             default:
-                                console.log(chalk.redBright(`Digite Uma Opçao Valida!`));
+                                console.log(chalk.redBright(`Operacao invalida`));
                                 exe = true 
                         }
                     }

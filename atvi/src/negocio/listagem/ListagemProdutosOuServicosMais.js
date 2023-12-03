@@ -59,7 +59,7 @@ class ListagemProdutosOuServicosMais extends listagem_1.default {
             let exec = true;
             while (exec) {
                 let entrada = new entrada_1.default();
-                console.log("------------------------------------------------");
+                console.log("-------------------------------------------");
                 console.log(`Opçao de Listagem.`);
                 console.log(`1. Produto`);
                 console.log(`2. Serviço`);
@@ -67,18 +67,18 @@ class ListagemProdutosOuServicosMais extends listagem_1.default {
                 switch (opcao) {
                     case 1:
                         console.log(chalk_1.default.greenBright("Listagem dos produtos mais consumidos em quantidade."));
-                        console.log(chalk_1.default.red(`\n---------------------------------------------------------------\n`));
+                        console.log(chalk_1.default.red(`\n----------------------------------------------------------\n`));
                         this.listarProdutos();
                         exec = false;
                         break;
                     case 2:
                         console.log(chalk_1.default.greenBright("Listagem dos serviços mais consumidos em quantidade."));
-                        console.log(chalk_1.default.red(`\n---------------------------------------------------------------\n`));
+                        console.log(chalk_1.default.red(`\n----------------------------------------------------------\n`));
                         this.listarServicos();
                         exec = false;
                         break;
                     default:
-                        console.log(chalk_1.default.red(`Digite Uma Opçao Valida!`));
+                        console.log(chalk_1.default.red(`Operacao invalida`));
                         exec = true;
                 }
             }

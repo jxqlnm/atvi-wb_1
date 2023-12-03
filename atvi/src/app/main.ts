@@ -121,7 +121,7 @@ let produto2 = new Produto("Condicionador Revitalizante", 20);
 let produto3 = new Produto("Creme Antirrugas", 15);
 let produto4 = new Produto("Esfoliante Corporal de Frutas", 8);
 let produto5 = new Produto("Óleo Corporal de Lavanda", 18);
-let produto6 = new Produto("Máscara de Argila Facial", 25);
+let produto6 = new Produto("Mascara de Argila Facial", 25);
 let produto7 = new Produto("Shampoo Hidratante", 14);
 let produto8 = new Produto("Creme Noturno Reparador", 22);
 let produto9 = new Produto("Gel de Banho Energizante", 10);
@@ -130,7 +130,7 @@ let produto11 = new Produto("Perfume Floral Elegante", 30);
 let produto12 = new Produto("Esfoliante Labial de Baunilha", 12);
 let produto13 = new Produto("Creme para Mãos e Unhas", 14);
 let produto14 = new Produto("Óleo Essencial de Tea Tree", 25);
-let produto15 = new Produto("Máscara Capilar Nutritiva", 18);
+let produto15 = new Produto("Mascara Capilar Nutritiva", 18);
 let produto16 = new Produto("Gel de Limpeza Facial Suave", 15);
 let produto17 = new Produto("Perfume Masculino Intenso", 28);
 let produto18 = new Produto("Sabonete Líquido Relaxante", 12);
@@ -209,7 +209,7 @@ while (execucao) {
     console.log(chalk.blueBright(`17. Listagem do produto ou serviço mais consumido`));
     console.log(chalk.blueBright(`18. Listagem do produto ou serviço mais consumido por genero`));
     console.log(chalk.blueBright(`19. Listagem dos clientes que mais consumiram em valor`));
-    console.log(chalk.red(`0Sair`));
+    console.log(chalk.red(`0. Sair`));
 
     let entrada = new Entrada()
     let opcao = entrada.receberNumero(`Escolha uma opçao: `)
@@ -293,7 +293,7 @@ while (execucao) {
             break
         case 0:
             execucao = false
-            console.log(`fim`)
+            console.log(`Fim`)
             break;
         default:
             console.log(`Operaçao invalida `)

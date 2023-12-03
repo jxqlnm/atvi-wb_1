@@ -20,8 +20,8 @@ class ExcluirServico extends deletar_1.default {
             let cont = 1;
             this.servicos.forEach(servico => {
                 if (servico.nome == busca) {
-                    console.log(`Serviço encontrado, deseja realmente excluir o Serviço?`);
-                    let confirma = this.entrada.receberNumero(`1excluir, 2cancelar: `);
+                    console.log(`Deseja realmente excluir o Serviço?`);
+                    let confirma = this.entrada.receberNumero(`1. Excluir, 2. Cancelar: `);
                     switch (confirma) {
                         case 1:
                             let indice = this.servicos.indexOf(servico);
@@ -36,7 +36,7 @@ class ExcluirServico extends deletar_1.default {
                     }
                 }
                 else if (cont == this.servicos.length) {
-                    console.log(`\n nenhum Serviço encontrado com o nome informado! \n`);
+                    console.log(`\nNenhum Serviço encontrado com o nome informado! \n`);
                     executa = false;
                 }
                 else {

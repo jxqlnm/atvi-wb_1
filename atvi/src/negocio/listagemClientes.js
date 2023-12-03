@@ -12,7 +12,7 @@ class ListagemClientes extends listagem_1.default {
     }
     listar() {
         console.log(chalk_1.default.blueBright(`\nLista de todos os clientes:`));
-        console.log(chalk_1.default.red(`----------------------------------------------------------`));
+        console.log(chalk_1.default.red(`-----------------------------------------------------`));
         this.clientes.forEach(cliente => {
             console.log(chalk_1.default.blueBright(`Nome: `) + cliente.nome);
             console.log(chalk_1.default.blueBright(`Nome social: `) + cliente.nomeSocial);
@@ -31,7 +31,7 @@ class ListagemClientes extends listagem_1.default {
                 console.log('      ' + ser.nome);
             });
             console.log(chalk_1.default.blueBright(']'));
-            console.log(chalk_1.default.red(`----------------------------------------------------------`));
+            console.log(chalk_1.default.red(`-----------------------------------------------------`));
         });
         console.log(`\n`);
     }

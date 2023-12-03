@@ -29,7 +29,7 @@ class CadastroCliente extends cadastro_1.default {
         let diaRg = new Number(partesDataRg[0].valueOf()).valueOf();
         let dataEmissaoRg = new Date(anoRg, mesRg, diaRg);
         // CPF
-        let valor = this.entrada.receberCpf(`Informe o número do cpf, no padrao 00000000000: `);
+        let valor = this.entrada.receberCpf(`Informe o numero do cpf, no padrao 00000000000: `);
         let data = this.entrada.receberData(`Informe a data de emissao do cpf, no padrao dd/mm/yyyy: `);
         let partesData = data.split('/');
         let ano = new Number(partesData[2].valueOf()).valueOf();

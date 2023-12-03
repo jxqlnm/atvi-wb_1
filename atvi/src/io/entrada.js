@@ -22,7 +22,7 @@ class Entrada {
                 exe = true;
             }
             else if (valor.replace(/[^0-9]/g, '').length < 8) {
-                console.log("Esse campo nao pode ser menor que 8 digitos! E deve conter apenas números!");
+                console.log("Esse campo nao pode ser menor que 8 digitos! E deve conter apenas numeros!");
                 exe = true;
             }
             else if (valor.replace(/[^0-9]/g, '').length > 8) {
@@ -58,7 +58,7 @@ class Entrada {
                 exe = true;
             }
             else if (valor.replace(/[^0-9]/g, '').length < 11) {
-                console.log("Esse campo nao pode ser menor que 11 digitos! E deve conter apenas números!");
+                console.log("Esse campo nao pode ser menor que 11 digitos! E deve conter apenas numeros!");
                 exe = true;
             }
             else if (valor.replace(/[^0-9]/g, '').length > 11) {

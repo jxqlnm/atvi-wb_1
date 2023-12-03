@@ -160,14 +160,14 @@ class ListaGeneroConsumo extends listagem_1.default {
         this.registrarItens();
         while (exec) {
             let entrada = new entrada_1.default();
-            console.log("------------------------------------------------");
+            console.log("-------------------------------------------");
             console.log(`Opçao de Listagem.`);
             console.log(`1Produto`);
             console.log(`2Serviço`);
             let opcao = entrada.receberNumero(`Escolha uma opçao: `);
             switch (opcao) {
                 case 1:
-                    console.log('\nLista de produtos mais consumidos pelo público...');
+                    console.log('\nLista de produtos mais consumidos pelo publico:');
                     console.log('\nFEMININO');
                     this.listaProduto.listaFem.forEach(produto => {
                         console.log(`- ${produto.nome}: Consumido ${produto.consumo} vezes`);
@@ -181,7 +181,7 @@ class ListaGeneroConsumo extends listagem_1.default {
                     exec = false;
                     break;
                 case 2:
-                    console.log('\nLista de serviços mais consumidos pelo público...');
+                    console.log('\nLista de serviços mais consumidos pelo publico:');
                     console.log('\nFEMININO');
                     this.listaServico.listaFem.forEach(servico => {
                         console.log(`- ${servico.nome}: Consumido ${servico.consumo} vezes`);
@@ -195,7 +195,7 @@ class ListaGeneroConsumo extends listagem_1.default {
                     exec = false;
                     break;
                 default:
-                    console.log(chalk_1.default.red(`Digite Uma Opçao Valida!`));
+                    console.log(chalk_1.default.red(`Operacao invalida`));
                     exec = true;
             }
         }

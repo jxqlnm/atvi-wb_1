@@ -23,7 +23,7 @@ class AtualizarProdutos extends atualizar_1.default {
                 console.log(`\nCadastro atualizado \n`);
             }
             else if (cont == this.produtos.length) {
-                console.log(`\n nenhum Produto encontrado com o nome informado! \n`);
+                console.log(`\nNenhum Produto encontrado com o nome informado! \n`);
             }
             else {
                 cont++;

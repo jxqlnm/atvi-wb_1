@@ -20,7 +20,7 @@ export default class Entrada {
                 console.log("Esse campo e obrigatório");
                 exe = true;
             } else if (valor.replace(/[^0-9]/g, '').length < 8) {
-                console.log("Esse campo nao pode ser menor que 8 digitos! E deve conter apenas números");
+                console.log("Esse campo nao pode ser menor que 8 digitos! E deve conter apenas numeros");
                 exe = true;
             } else if (valor.replace(/[^0-9]/g, '').length > 8) {
                 console.log("Esse campo nao pode ser maior que 8 digitos");
@@ -54,7 +54,7 @@ export default class Entrada {
                 console.log("Esse campo e obrigatório");
                 exe = true;
             } else if (valor.replace(/[^0-9]/g, '').length < 11) {
-                console.log("Esse campo nao pode ser menor que 11 digitos e deve conter apenas números");
+                console.log("Esse campo nao pode ser menor que 11 digitos e deve conter apenas numeros");
                 exe = true;
             } else if (valor.replace(/[^0-9]/g, '').length > 11) {
                 console.log("Esse campo nao pode ser maior que 11 digitos");
@@ -108,7 +108,7 @@ export default class Entrada {
                 exe = false;
                 return 'Feminino';
             } else {
-                console.log("Esse campo nao pode receber genero diferente de Masculino e Feminino no exato momento");
+                console.log("Esse campo nao pode receber genero diferente de Masculino e Feminino");
                 exe = true;
             }
         }

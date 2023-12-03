@@ -45,7 +45,7 @@ export default class ListagemComusumoValor extends Listagem {
         let exec = true
         while (exec) {
             let entrada = new Entrada()
-            console.log("------------------------------------------------");
+            console.log("-------------------------------------------");
             console.log(`Opçao de Listagem.`);
             console.log(`1. Produto`);
             console.log(`2. Serviço`); 
@@ -64,14 +64,14 @@ export default class ListagemComusumoValor extends Listagem {
                     console.log(chalk.greenBright('\nListagem de clientes que MAIS consumiram serviços em VALOR'));
                     listaServico.forEach((cliente, indice) => {
 
-                        let txt = `${indice + 1}° - R$${getValorTotal(cliente.getServicosConsumidos)} em serviços consumidos`
+                        let txt = `${indice + 1}° - R$ ${getValorTotal(cliente.getServicosConsumidos)} em serviços consumidos`
 
                         console.log(`${indice + 1}° - ${cliente.nome}: ${txt}`)
                     });
                     exec = false
                     break
                 default:
-                    console.log(chalk.red(`Digite Uma Opçao Valida!`));
+                    console.log(chalk.red(`Operacao invalida`));
                     exec = true 
                         
 

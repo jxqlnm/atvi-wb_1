@@ -132,7 +132,7 @@ while (execucao) {
     console.log(chalk_1.default.blueBright(`17Listagem do produto ou serviço mais consumido`));
     console.log(chalk_1.default.blueBright(`18Listagem do produto ou serviço mais consumido por genero`));
     console.log(chalk_1.default.blueBright(`19Listagem dos clientes que mais consumiram em valor`));
-    console.log(chalk_1.default.red(`0Sair`));
+    console.log(chalk_1.default.red(`0. Sair`));
     let entrada = new entrada_1.default();
     let opcao = entrada.receberNumero(`Escolha uma opçao: `);
     switch (opcao) {
@@ -214,7 +214,7 @@ while (execucao) {
             break;
         case 0:
             execucao = false;
-            console.log(`fim`);
+            console.log(`Fim`);
             break;
         default:
             console.log(`Operaçao nao entendida `);
