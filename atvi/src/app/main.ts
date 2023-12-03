@@ -186,6 +186,8 @@ cliente8.addServico(servico5);
 cliente9.addServico(servico1);
 cliente11.addServico(servico1);
 
+console.log("Bem vindo ao sistema de gerenciamento de clientes, produtos e serviços da empresa de beleza e estética beleza e estilo World Beauty (WB)!");
+
 let execucao = true
 
 while (execucao) {
