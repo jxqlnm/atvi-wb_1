@@ -1,7 +1,7 @@
-class Servico {
-    private nome: string;
-    private preco: number;
-    private consumo: number;
+export default class Servico {
+    public nome!: string;
+    public preco!: number;
+    public consumo!: number;
 
     constructor(nome: string, preco: number) {
         this.nome = nome;
@@ -17,9 +17,7 @@ class Servico {
         return this.preco;
     }
 
-    addConsumo(): void {
+    public addConsumo(): void {
         this.consumo += 1;
     }
 }
-
-export default Servico;

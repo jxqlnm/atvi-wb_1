@@ -1,18 +1,19 @@
-import CPF from "../modelo/cpf";
-import RG from "../modelo/rg";
-import Produto from "../modelo/produto";
-import Servico from "../modelo/servico";
+import CPF from "./cpf";
+import Produto from "./produto";
+import RG from "./rg";
+import Servico from "./servico";
+import Telefone from "./telefone";
 
-class Cliente {
-    private nome: string;
-    private nomeSocial: string;
-    private genero: string;
+export default class Cliente {
+    public nome: string;
+    public nomeSocial: string;
+    public genero: string;
     private cpf: CPF;
-    private rgs: RG[];
+    private rgs: Array<RG>;
     private dataCadastro: Date;
-    private telefones: string[];
-    private produtosConsumidos: Produto[];
-    private servicosConsumidos: Servico[];
+    private telefones: Array<Telefone>;
+    private produtosConsumidos: Array<Produto>;
+    private servicosConsumidos: Array<Servico>;
 
     constructor(nome: string, nomeSocial: string, cpf: CPF, genero: string) {
         this.nome = nome;
@@ -26,62 +27,60 @@ class Cliente {
         this.servicosConsumidos = [];
     }
 
-    get getCpf(): CPF {
+    public get getCpf(): CPF {
         return this.cpf;
     }
 
-    get getRgs(): RG[] {
+    public get getRgs(): Array<RG> {
         return this.rgs;
     }
 
-    get getDataCadastro(): Date {
+    public get getDataCadastro(): Date {
         return this.dataCadastro;
     }
 
-    get getTelefones(): string[] {
+    public get getTelefones(): Array<Telefone> {
         return this.telefones;
     }
 
-    get getProdutosConsumidos(): Produto[] {
+    public get getProdutosConsumidos(): Array<Produto> {
         return this.produtosConsumidos;
     }
 
-    get getServicosConsumidos(): Servico[] {
+    public get getServicosConsumidos(): Array<Servico> {
         return this.servicosConsumidos;
     }
 
-    addRg(rg: RG): void {
+    public addRg(rg: RG): void {
         this.rgs.push(rg);
     }
 
-    addTelefones(telefone: string): void {
+    public addTelefones(telefone: Telefone): void {
         this.telefones.push(telefone);
     }
 
-    addProduto(produto: Produto): void {
+    public addProduto(produto: Produto): void {
         this.produtosConsumidos.push(produto);
         produto.addConsumo();
     }
 
-    addServico(servico: Servico): void {
+    public addServico(servico: Servico): void {
         this.servicosConsumidos.push(servico);
         servico.addConsumo();
     }
 
-    get getGenero(): string {
+    public get getGenero(): string {
         switch (this.genero) {
             case 'Masculino':
-                return 'M - Masculino';
+                return 'MMasculino';
             case 'Feminino':
-                return 'F - Feminino';
+                return 'FFeminino';
             default:
-                return 'O - Outro';
+                return 'OOutro';
         }
     }
 
-    getGeneroChar(): string {
+    public getGeneroChar(): string {
         return this.genero;
     }
 }
-
-export default Cliente;

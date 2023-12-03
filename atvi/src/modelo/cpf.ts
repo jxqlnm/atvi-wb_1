@@ -1,4 +1,4 @@
-class CPF {
+export default class CPF {
     private valor: string;
     private dataEmissao: Date;
 
@@ -7,13 +7,11 @@ class CPF {
         this.dataEmissao = dataEmissao;
     }
 
-    get getValor(): string {
+    public get getValor(): string {
         return this.valor;
     }
 
-    get getDataEmissao(): Date {
+    public get getDataEmissao(): Date {
         return this.dataEmissao;
     }
 }
-
-export default CPF;

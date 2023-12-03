@@ -1,17 +1,18 @@
 {
   "name": "atvi-wb",
   "version": "0.0.1",
-  "description": "Repositório com códigos de auxílio para o desenvolvimento de uma agenda de cadastro de clientes, em TypeScript. Os códigos são para auxílio da ATVI da disciplina de técnicas de programação I.",
+  "description": "Repositório com códigos de auxilio para o desenvolvimento de uma agenda de cadastro de clientes, em TypeScript. Os códigos sao para auxilio da ATVI da disciplina de técnicas de programaçao I.",
   "main": "out/app/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc && node ./out/app/main.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^16.7.10",
     "@types/prompt-sync": "^4.1.1",
-    "chalk": "^5.3.0",
+    "chalk": "^3.0.0",
     "prompt-sync": "^4.2.0"
   }
 }

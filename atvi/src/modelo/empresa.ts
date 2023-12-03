@@ -1,11 +1,11 @@
-import Cliente from "./cliente"
-import Produto from "./produto"
-import Servico from "./servico"
+import Cliente from "./cliente";
+import Produto from "./produto";
+import Servico from "./servico";
 
-class Empresa {
-    private clientes: Cliente[];
-    private produtos: Produto[];
-    private servicos: Servico[];
+export default class Empresa {
+    private clientes: Array<Cliente>;
+    private produtos: Array<Produto>;
+    private servicos: Array<Servico>;
 
     constructor() {
         this.clientes = [];
@@ -13,17 +13,15 @@ class Empresa {
         this.servicos = [];
     }
 
-    get getClientes(): Cliente[] {
+    public get getClientes(): Array<Cliente> {
         return this.clientes;
     }
 
-    get getProdutos(): Produto[] {
+    public get getProdutos(): Array<Produto> {
         return this.produtos;
     }
 
-    get getServicos(): Servico[] {
+    public get getServicos(): Array<Servico> {
         return this.servicos;
     }
 }
-
-export default Empresa;

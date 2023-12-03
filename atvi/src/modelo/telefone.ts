@@ -1,4 +1,4 @@
-class Telefone {
+export default class Telefone {
     private ddd: string;
     private numero: string;
 
@@ -7,13 +7,11 @@ class Telefone {
         this.numero = numero;
     }
 
-    get getDdd(): string {
+    public get getDdd(): string {
         return this.ddd;
     }
 
-    get getNumero(): string {
+    public get getNumero(): string {
         return this.numero;
     }
 }
-
-export default Telefone;

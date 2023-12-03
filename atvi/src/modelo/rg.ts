@@ -1,4 +1,4 @@
-class RG {
+export default class RG {
     private valor: string;
     private dataEmissao: Date;
 
@@ -7,13 +7,11 @@ class RG {
         this.dataEmissao = dataEmissao;
     }
 
-    get getValor(): string {
+    public get getValor(): string {
         return this.valor;
     }
 
-    get getDataEmissao(): Date {
+    public get getDataEmissao(): Date {
         return this.dataEmissao;
     }
 }
-
-export default RG;
