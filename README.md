@@ -70,3 +70,10 @@ yarn install
 ```bash
 yarn start
 ```
+
+## Equipe:
+
+| Desenvolvedoras | Github |
+| -------- |-------- |
+| Jacqueline Mariane | <a href="https://github.com/jxqlnm" target="_blanck"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> |
+| Gisele Reis | <a href="https://github.com/gisele-reis" target="_blanck"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> |
