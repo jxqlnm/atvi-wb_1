@@ -76,7 +76,7 @@ class ListaProdutos extends Component{
             <Link
               className="btn waves cyan"
               to='/EditarProduto'
-              style={{ position: "absolute", bottom: "10px", right: "10px" }}
+              style={{ position: "absolute", bottom: "10px", right: "10px }}
             >
               Visualizar
             </Link>
