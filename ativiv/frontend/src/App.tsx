@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import { Navigate, Route, Routes } from "react-router";
+import { BrowserRouter } from "react-router-dom";
+import FormularioCadastroCliente from "./componentes/CadastroCliente";
+import Home from "./componentes/home";
+import Listagens from "./componentes/Listagens";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+    render() {
+        return(
+            <BrowserRouter>
+            <Routes>
+                <Route index element={<Home />} />
+                <Route path="*" element={<Navigate to="/" />} />
+                <Route path="/formularioCadastroCliente" element={<FormularioCadastroCliente />} />
+                <Route path="/Listagens" element={<Listagens/>}/>
+            </Routes>
+        </BrowserRouter>
+        )
+    }
 }
 
-export default App;
+export default App
