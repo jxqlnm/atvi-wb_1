@@ -16,7 +16,7 @@ class Listagem extends Component{
                     {/* Clientes que mais consumiram */}
                     <div id="clientesMaisConsumiram" className="col s12">
                         <div className="row">
-                        <h3 className="text-align: center">Clientes que mais consumiram produtos e serviços, em quantidade</h3>
+                        <h3 className="text-align: center">Clientes que mais consumiram produtos e serviços (quantidade) </h3>
                             <div className="col s12" >
                                 <table className="centered responsive-table ">
                                     <thead>
@@ -31,21 +31,27 @@ class Listagem extends Component{
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>Victor</td>
-                                            <td>16</td>
+                                            <td>Teresa</td>
+                                            <td>17</td>
                                             <td>12</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>Ana</td>
-                                            <td>12</td>
+                                            <td>Pedro</td>
+                                            <td>10</td>
                                             <td>10</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Luiz</td>
-                                            <td>8</td>
-                                            <td>8</td>
+                                            <td>Isabel</td>
+                                            <td>9</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Leopoldina</td>
+                                            <td>7</td>
+                                            <td>3</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -53,7 +59,7 @@ class Listagem extends Component{
                         </div>
                         <hr></hr>
                         <div className="row">
-                        <h3 className="text-align: center">Clientes que mais consumiram produtos e serviços, em valor</h3>
+                        <h3 className="text-align: center">Clientes que mais consumiram produtos e serviços (valor) </h3>
                             <div className="col s12" >
                                 <table className="centered responsive-table ">
                                     <thead>
@@ -68,21 +74,27 @@ class Listagem extends Component{
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>Victor</td>
-                                            <td>R$160</td>
-                                            <td>R$120</td>
+                                            <td>Teresa</td>
+                                            <td>R$15.000</td>
+                                            <td>R$10.000</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>Ana</td>
-                                            <td>R$120</td>
-                                            <td>R$100</td>
+                                            <td>Isabel</td>
+                                            <td>R$12.000</td>
+                                            <td>R$8.000</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Luiz</td>
-                                            <td>R$80</td>
-                                            <td>R$80</td>
+                                            <td>Pedro</td>
+                                            <td>R$900</td>
+                                            <td>R$900</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Leopoldina</td>
+                                            <td>R$500</td>
+                                            <td>R$120</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -105,15 +117,15 @@ class Listagem extends Component{
     
                                     <tbody>
                                         <tr>
-                                            <td>Victor</td>
-                                            <td>M</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ana</td>
+                                            <td>Teresa</td>
                                             <td>F</td>
                                         </tr>
                                         <tr>
-                                            <td>Luiz</td>
+                                            <td>Isabel</td>
+                                            <td>F</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pedro</td>
                                             <td>M</td>
                                         </tr>
                                     </tbody>
@@ -134,11 +146,11 @@ class Listagem extends Component{
     
                                     <tbody>
                                         <tr>
-                                            <td>Shampoo</td>
+                                            <td>Sabonete de Ervas</td>
                                             <td>F</td>
                                         </tr>
                                         <tr>
-                                            <td>Shampoo</td>
+                                            <td>Esfoliante Corporal de Frutas</td>
                                             <td>M</td>
                                         </tr>
                                     </tbody>
@@ -156,11 +168,11 @@ class Listagem extends Component{
     
                                     <tbody>
                                         <tr>
-                                            <td>Pedicure</td>
+                                            <td>Tratamento Facial Anti-idade</td>
                                             <td>F</td>
                                         </tr>
                                         <tr>
-                                            <td>Corte de cabelo</td>
+                                            <td>Massagem Relaxante com Óleos Essenciais</td>
                                             <td>M</td>
                                         </tr>
                                     </tbody>
@@ -184,11 +196,12 @@ class Listagem extends Component{
     
                                     <tbody>
                                         <tr>
-                                            <td>Shampoo</td>
-                                            <td>30</td>
+                                            <td>Sabonete de Ervas</td>
+                                            <td> 250
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>Pente</td>
+                                            <td>Esfoliante Corporal de Frutas</td>
                                             <td>25</td>
                                         </tr>
                                     </tbody>
@@ -209,12 +222,12 @@ class Listagem extends Component{
     
                                     <tbody>
                                         <tr>
-                                            <td>Pedicure</td>
-                                            <td>7</td>
+                                            <td>Massagem Relaxante com Óleos Essenciais</td>
+                                            <td>700</td>
                                         </tr>
                                         <tr>
-                                            <td>Corte de cabelo</td>
-                                            <td>6</td>
+                                            <td>Tratamento Facial Anti-idade</td>
+                                            <td>170</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -240,21 +253,21 @@ class Listagem extends Component{
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>Luiz</td>
-                                                <td>5</td>
-                                                <td>4</td>
+                                                <td>Leopoldina</td>
+                                                <td>7</td>
+                                                <td>3</td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>Victor</td>
+                                                <td>Isabel</td>
+                                                <td>9</td>
                                                 <td>7</td>
-                                                <td>6</td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>Ana</td>
-                                                <td>8</td>
-                                                <td>9</td>
+                                                <td>Pedro</td>
+                                                <td>10</td>
+                                                <td>10</td>
                                             </tr>
                                         </tbody>
                                     </table>

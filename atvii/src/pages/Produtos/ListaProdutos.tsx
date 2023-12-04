@@ -11,7 +11,7 @@ class ListaProdutos extends Component{
         <br/>
       <h2>Produtos</h2>
       </div>
-      <Link to="/CadastrarProduto" className="btn waves-effect waves-light blue">
+      <Link to="/CadastrarProduto" className="btn waves-effect waves- purple">
         Cadastrar Produto
       </Link>
       <br/>
@@ -24,34 +24,20 @@ class ListaProdutos extends Component{
           <a className="collection-item" style={{ position: "relative" }}>
             <div className="row">
               <div className="col s5">
-                <h5>Nome: Belinha</h5>
-                <h6> Tipo: Cachorro</h6>
-                <h6>Raça: Pinsher</h6>
-                <h6>Gênero: Fêmea</h6>
-              </div>
-              <div className="col s4">
-                <br />
-                <br />
-                <h6>Dono: Francisca de Moraes</h6>
-                <h6>CPF: 283748374-21</h6>
-              </div>
-              <div className="col s3">
-                <h5>Telefones:</h5>
-                <ul>
-                  <li>(13) 947362746</li>
-                  <li>(13) 984738473</li>
-                </ul>
+                <h5>Sabonete de Ervas</h5>
+                <h6>Código: 413096403</h6>
+                <h6>Preço: R$15,00</h6>
               </div>
             </div>
             <Link
-              className="btn waves"
+              className="btn waves cyan"
               to='/EditarProduto'
               style={{ position: "absolute", bottom: "10px", right: "10px" }}
             >
               Visualizar
             </Link>
             <button
-              className="btn-floating btn waves red pl-2"
+              className="btn-floating btn waves pink pl-2"
               style={{ position: "absolute", top: "10px", right: "10px" }}
             >
               X
@@ -60,33 +46,20 @@ class ListaProdutos extends Component{
           <a className="collection-item" style={{ position: "relative" }}>
             <div className="row">
               <div className="col s5">
-                <h5>Nome: Max</h5>
-                <h6> Tipo: Cachorro</h6>
-                <h6>Raça: Golden Retriever</h6>
-                <h6>Gênero: Macho</h6>
-              </div>
-              <div className="col s4">
-                <br />
-                <br />
-                <h6>Dono: Eduardo de Lima</h6>
-                <h6>CPF: 58475847482</h6>
-              </div>
-              <div className="col s3">
-                <h5>Telefones:</h5>
-                <ul>
-                  <li>(12) 994738273</li>
-                </ul>
+                <h5>Condicionador Revitalizante</h5>
+                <h6>Código: 282152350</h6>
+                <h6>Preço: R$97,00</h6>
               </div>
             </div>
             <Link
-              className="btn waves"
+              className="btn waves cyan"
               to='/EditarProduto'
               style={{ position: "absolute", bottom: "10px", right: "10px" }}
             >
               Visualizar
             </Link>
             <button
-              className="btn-floating btn waves red pl-2"
+              className="btn-floating btn waves pink pl-2"
               style={{ position: "absolute", top: "10px", right: "10px" }}
             >
               X
@@ -95,34 +68,20 @@ class ListaProdutos extends Component{
           <a className="collection-item" style={{ position: "relative" }}>
             <div className="row">
               <div className="col s5">
-                <h5>Nome: Sofia</h5>
-                <h6> Tipo: Gato</h6>
-                <h6>Raça: Siamês</h6>
-                <h6>Gênero: Fêmea</h6>
-              </div>
-              <div className="col s4">
-                <br />
-                <br />
-                <h6>Dono: Maria Eduarda de Moraes</h6>
-                <h6>CPF: 58474837243</h6>
-              </div>
-              <div className="col s3">
-                <h5>Telefones:</h5>
-                <ul>
-                  <li>(13) 947384732</li>
-                  <li>(13) 936273643</li>
-                </ul>
+                <h5>Creme Antirrugas</h5>
+                <h6>Código: 254915693</h6>
+                <h6>Preço: R$199,00</h6>
               </div>
             </div>
             <Link
-              className="btn waves"
+              className="btn waves cyan"
               to='/EditarProduto'
               style={{ position: "absolute", bottom: "10px", right: "10px" }}
             >
               Visualizar
             </Link>
             <button
-              className="btn-floating btn waves red pl-2"
+              className="btn-floating btn waves pink pl-2"
               style={{ position: "absolute", top: "10px", right: "10px" }}
             >
               X
@@ -131,34 +90,20 @@ class ListaProdutos extends Component{
           <a className="collection-item" style={{ position: "relative" }}>
             <div className="row">
               <div className="col s5">
-                <h5>Nome: Lassie</h5>
-                <h6> Tipo: Cachorro</h6>
-                <h6>Raça: Vira-lata</h6>
-                <h6>Gênero: Fêmea</h6>
-              </div>
-              <div className="col s4">
-                <br />
-                <br />
-                <h6>Dono: Mauricio de Souza</h6>
-                <h6>CPF: 48394839483</h6>
-              </div>
-              <div className="col s3">
-                <h5>Telefones:</h5>
-                <ul>
-                  <li>(13) 948394834</li>
-                  <li>(13) 949380349</li>
-                </ul>
+                <h5>Esfoliante Corporal de Frutas</h5>
+                <h6>Código: 418066346</h6>
+                <h6>Preço: R$85,00</h6>
               </div>
             </div>
             <Link
-              className="btn waves"
+              className="btn waves cyan"
               to='/EditarProduto'
               style={{ position: "absolute", bottom: "10px", right: "10px" }}
             >
               Visualizar
             </Link>
             <button
-              className="btn-floating btn waves red pl-2"
+              className="btn-floating btn waves pink pl-2"
               style={{ position: "absolute", top: "10px", right: "10px" }}
             >
               X
